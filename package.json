@@ -1,0 +1,34 @@
+{
+  "name": "vite-plugin-require-resolve",
+  "version": "0.0.1-beta.0",
+  "description": "A vite plugin deals with require.resolve() assets, for node-browser mixed-context environment like nw.js etc",
+  "keywords": ["vite-plugin", "require-resolve", "require.resolve"],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/keenghost/vite-plugin-require-resolve.git"
+  },
+  "license": "MIT",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "files": ["index.js", "index.d.ts"],
+  "scripts": {
+    "preinstall": "npx only-allow pnpm",
+    "build": "tsc && node ./script.js",
+    "publish": "cd ./dist && nrm use npm && npm login && npm publish && nrm use tao"
+  },
+  "type": "module",
+  "devDependencies": {
+    "@types/fs-extra": "^11.0.1",
+    "@types/node": "^18.15.3",
+    "@types/strip-comments": "^2.0.1",
+    "lodash": "^4.17.21",
+    "typescript": "^4.9.5",
+    "vite": "^4.1.4"
+  },
+  "dependencies": {
+    "fs-extra": "^11.1.0",
+    "md5-file": "^5.0.0",
+    "picocolors": "^1.0.0",
+    "strip-comments": "^2.0.1"
+  }
+}
