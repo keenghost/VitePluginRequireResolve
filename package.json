@@ -1,6 +1,6 @@
 {
   "name": "vite-plugin-require-resolve",
-  "version": "0.0.1-beta.3",
+  "version": "0.0.1",
   "description": "A vite plugin deals with require.resolve() assets, for node-browser mixed-context environment like nw.js etc",
   "keywords": ["vite-plugin", "require-resolve", "require.resolve"],
   "repository": {
