@@ -187,3 +187,5 @@ export default function VitePluginRequireResolve(): PluginOption {
     },
   }
 }
+
+module.exports = exports.default
