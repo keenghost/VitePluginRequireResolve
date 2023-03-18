@@ -21,7 +21,7 @@
   },
   "scripts": {
     "preinstall": "npx only-allow pnpm",
-    "build": "tsc -p tsconfig.json && node ./script-rename.js && tsc -p tsconfig.cjs.json && node ./script.js",
+    "build": "tsc -p tsconfig.json && node ./script-rename.js && tsc -p tsconfig.cjs.json && node ./script-bundle.js",
     "publish": "cd ./dist && npm publish"
   },
   "type": "module",
